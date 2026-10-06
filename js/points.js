@@ -14,7 +14,8 @@ function main() {
     var vertices = [
         -0.5,0.5,0.0,
         0.0,0.5,0.0,
-        -0.25,0.25,0.0,
+        -0.5,0,0.0,
+        0,0,0,
     ];
 
 
@@ -110,6 +111,5 @@ function main() {
     gl.viewport(0,0,canvas.width,canvas.height);
 
     // Kreslenie bodov
-    gl.drawArrays(gl.POINTS, 0, 3);
-
+    gl.drawArrays(gl.POINTS, 0, 4);
 }

@@ -13,14 +13,18 @@ function main() {
 
 
      var vertices = [
-     -0.5,0.5,0.0,
-     -0.5,-0.5,0.0,
-     0.5,-0.5,0.0,
+         -0.75,0.5,0.0,
+         -0.75,-0.5,0.0,
+         -0.10,-0.5,0.0,
+
+         0.75,0.5,0.0,
+         0.75,-0.5,0.0,
+         0.10,-0.5,0.0,
      ];
 
-    var colors = [0,0,1, 1,0,0, 0,1,0,]; //blue, red, green
+    var colors = [0,0,1, 1,0,0, 0,1,0,   0,0,0.5, 0.7,0.7,0, 0.7,0,0.5,]; //red, green, blue
 
-    indices = [0,1,2];
+    indices = [0,1,2,3,4,5];
 
     // Vytvorenie a inicializacia prazdneho buffera objektov na ulozenie udajov o vrcholoch
     var vertex_buffer = gl.createBuffer();
